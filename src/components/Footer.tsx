@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,11 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">ES</span>
-              </div>
-              <span className="text-white font-semibold text-lg">EchoSensing</span>
+            <div className="mb-4">
+              <Image
+                src="/images/logo-horizontal.png"
+                alt="EchoSensing"
+                width={180}
+                height={24}
+                className="h-6 w-auto invert brightness-200"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
               Building the next generation of SAR satellites with onboard AI — delivering real-time Earth intelligence from orbit.

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -21,13 +22,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">ES</span>
-            </div>
-            <span className="text-gray-900 font-semibold text-lg tracking-tight">
-              EchoSensing
-            </span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logo-horizontal.png"
+              alt="EchoSensing"
+              width={160}
+              height={20}
+              className="h-5 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
