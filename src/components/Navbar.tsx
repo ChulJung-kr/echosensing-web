@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
-const navLinks = [
+const navLinksEn = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/technology", label: "Technology" },
@@ -13,16 +13,38 @@ const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+const navLinksKo = [
+  { href: "/ko", label: "홈" },
+  { href: "/ko/about", label: "소개" },
+  { href: "/ko/technology", label: "기술" },
+  { href: "/ko/team", label: "팀" },
+  { href: "/ko/contact", label: "문의" },
+];
+
+function getAlternatePath(pathname: string): string {
+  if (pathname.startsWith("/ko")) {
+    // Korean -> English
+    const rest = pathname.replace(/^\/ko/, "");
+    return rest || "/";
+  } else {
+    // English -> Korean
+    return "/ko" + (pathname === "/" ? "" : pathname);
+  }
+}
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const isKo = pathname.startsWith("/ko");
+  const navLinks = isKo ? navLinksKo : navLinksEn;
+  const alternatePath = getAlternatePath(pathname);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href={isKo ? "/ko" : "/"} className="flex items-center">
             <Image
               src="/images/logo-horizontal.png"
               alt="EchoSensing"
@@ -48,6 +70,31 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Language Switcher */}
+            <div className="ml-4 pl-4 border-l border-gray-200 flex items-center gap-1 text-sm">
+              <Link
+                href={isKo ? alternatePath : pathname}
+                className={`px-2 py-1 rounded transition-colors ${
+                  !isKo
+                    ? "font-bold text-gray-900"
+                    : "text-gray-400 hover:text-gray-600"
+                }`}
+              >
+                EN
+              </Link>
+              <span className="text-gray-300">|</span>
+              <Link
+                href={isKo ? pathname : alternatePath}
+                className={`px-2 py-1 rounded transition-colors ${
+                  isKo
+                    ? "font-bold text-gray-900"
+                    : "text-gray-400 hover:text-gray-600"
+                }`}
+              >
+                KR
+              </Link>
+            </div>
           </div>
 
           {/* Mobile hamburger */}
@@ -85,6 +132,33 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Mobile Language Switcher */}
+            <div className="flex items-center gap-2 px-4 py-2.5 text-sm">
+              <Link
+                href={isKo ? alternatePath : pathname}
+                onClick={() => setIsOpen(false)}
+                className={`px-2 py-1 rounded transition-colors ${
+                  !isKo
+                    ? "font-bold text-gray-900"
+                    : "text-gray-400 hover:text-gray-600"
+                }`}
+              >
+                EN
+              </Link>
+              <span className="text-gray-300">|</span>
+              <Link
+                href={isKo ? pathname : alternatePath}
+                onClick={() => setIsOpen(false)}
+                className={`px-2 py-1 rounded transition-colors ${
+                  isKo
+                    ? "font-bold text-gray-900"
+                    : "text-gray-400 hover:text-gray-600"
+                }`}
+              >
+                KR
+              </Link>
+            </div>
           </div>
         </div>
       )}
