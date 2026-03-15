@@ -18,12 +18,42 @@ const milestones = [
 ];
 
 const partners = [
-  "KARI (Korea Aerospace Research Institute)",
-  "KAIST (Korea Advanced Institute of Science & Technology)",
-  "Hanwha Systems",
-  "Defense Acquisition Program Administration",
-  "Momentus Space",
-  "Beyond Earth Ventures",
+  {
+    name: "Momentus Space",
+    flag: "🇺🇸",
+    country: "USA",
+    description: "Satellite bus specialist. CEO visited Korea. M500 bus compatibility co-modeling agreed.",
+  },
+  {
+    name: "NewOrbit Space Ltd",
+    flag: "🇬🇧",
+    country: "UK",
+    description: "VLEO satellite bus specialist. First launch planned for 2028. SAR payload test opportunity discussed.",
+  },
+  {
+    name: "Space Inventor",
+    flag: "🇩🇰",
+    country: "Denmark",
+    description: "European smallest bus specialist. Primary target for Phase I Edge AI Board supply.",
+  },
+  {
+    name: "Hanwha Systems",
+    flag: "🇰🇷",
+    country: "Korea",
+    description: "On-Board SAR signal processor ~$324K + ground S/W ~$414K contracted.",
+  },
+  {
+    name: "eGIS Korea",
+    flag: "🇰🇷",
+    country: "Korea",
+    description: "Digital twin specialist. National mapping platform. SaaS/DaaS partnership pending.",
+  },
+  {
+    name: "Beyond Earth Ventures",
+    flag: "🇺🇸",
+    country: "USA",
+    description: "Patrick Beatty — Seed-Series A VC. Space Force · DARPA · NASA mentor network.",
+  },
 ];
 
 const marketStats = [
@@ -115,30 +145,72 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Airborne SAR Testing — only images 01 and 02 */}
+      {/* Airborne SAR Test Success */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <SectionHeading
-            tag="Validation"
-            title="Airborne SAR Testing"
-            description="Our technology is validated through rigorous airborne SAR testing campaigns, proving performance before orbital deployment."
+            tag="Technology Validation"
+            title="Airborne SAR Test Success"
+            description="First successful airborne test by a commercial company in Korea — sub-meter ultra-high resolution validated."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[1, 2].map((n, i) => (
-              <FadeIn key={n} delay={i * 0.1}>
-                <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+          {/* Aircraft images — side by side like the reference */}
+          <FadeIn>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                <Image
+                  src="/images/aircraft-01.jpg"
+                  alt="SAR test aircraft interior with equipment"
+                  width={600}
+                  height={400}
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                <Image
+                  src="/images/aircraft-02.jpg"
+                  alt="SAR test aircraft exterior"
+                  width={600}
+                  height={400}
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* Achievement stats */}
+          <FadeIn delay={0.2}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { label: "Achievement", value: "Korea\u2019s first commercial airborne test" },
+                { label: "Resolution", value: "Sub-meter ultra-high resolution" },
+                { label: "Algorithm", value: "Auto motion compensation applied" },
+                { label: "Validation", value: "On-board SARP completed" },
+              ].map((item) => (
+                <div key={item.label} className="p-5 rounded-xl bg-white border border-gray-200 shadow-sm text-center">
+                  <p className="text-gray-400 text-xs font-medium uppercase tracking-wider mb-2">{item.label}</p>
+                  <p className="text-blue-600 font-semibold text-sm leading-snug">{item.value}</p>
+                </div>
+              ))}
+            </div>
+          </FadeIn>
+
+          {/* SAR result images */}
+          <FadeIn delay={0.3}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+              {[1, 2].map((n) => (
+                <div key={n} className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
                   <Image
                     src={`/images/airborne-sar-0${n}.png`}
-                    alt={`Airborne SAR testing ${n}`}
+                    alt={`Airborne SAR test result ${n}`}
                     width={600}
                     height={400}
                     className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-              </FadeIn>
-            ))}
-          </div>
+              ))}
+            </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -147,15 +219,22 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <SectionHeading
             tag="Partnerships"
-            title="Trusted Partners"
-            description="We collaborate with Korea's leading aerospace and defense institutions."
+            title="Strategic Partnerships"
+            description="Key partners & advisors secured across the US, Europe, and Korea — eliminating cold start risk."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             {partners.map((partner, i) => (
-              <FadeIn key={partner} delay={i * 0.05}>
-                <div className="p-6 rounded-xl bg-gray-50 border border-gray-200 text-center">
-                  <p className="text-gray-700 font-medium">{partner}</p>
+              <FadeIn key={partner.name} delay={i * 0.05}>
+                <div className="p-6 rounded-xl bg-gray-50 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all h-full">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-2xl">{partner.flag}</span>
+                    <div>
+                      <h4 className="text-gray-900 font-semibold text-sm">{partner.name}</h4>
+                      <p className="text-gray-400 text-xs">{partner.country}</p>
+                    </div>
+                  </div>
+                  <p className="text-gray-500 text-sm leading-relaxed">{partner.description}</p>
                 </div>
               </FadeIn>
             ))}
