@@ -53,7 +53,7 @@ const phases = [
     period: "2027 – 2029",
     title: "SAR 탑재체 & 플랫폼",
     description:
-      "위상배열 안테나를 적용한 자체 SAR 탑재체와 모듈형 위성 플랫폼을 개발합니다. 항공 SAR 시험을 통해 검증을 완료했습니다.",
+      "온보드 프로세싱 알고리즘을 탑재한 자체 SAR 탑재체와 모듈형 위성 플랫폼을 개발합니다. 항공 SAR 시험을 통해 검증을 완료했습니다.",
     image: "/images/sar-payload.png",
   },
   {
@@ -68,9 +68,9 @@ const phases = [
 
 const stats = [
   { value: "2017", label: "설립 연도" },
-  { value: "$4.9B", label: "글로벌 SAR 시장 (2023)" },
   { value: "24/7", label: "전천후 모니터링" },
   { value: "<1s", label: "온보드 처리 속도" },
+  { value: "$4.9B", label: "글로벌 SAR 시장 (2023)" },
 ];
 
 export default function KoHomePage() {
@@ -161,7 +161,7 @@ export default function KoHomePage() {
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 지연된 정보는{" "}
-                <span className="text-red-500">무용지물</span>입니다
+                <span className="text-red-500">정보가 아닙니다</span>
               </h2>
               <p className="text-gray-500 text-lg leading-relaxed">
                 기존 위성은 데이터를 촬영한 후 원시 영상을 지상국으로 전송하여
