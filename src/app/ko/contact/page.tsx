@@ -4,12 +4,41 @@ import FadeIn from "@/components/FadeIn";
 import { motion } from "framer-motion";
 import { useState, FormEvent } from "react";
 
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzuqAtmwl7GBBXK9shP4CnanI5VyzblH0KRva6dswZ9edi7tyU4UjESWNb_KGAwOhIr/exec";
+
 export default function KoContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+
+    const form = e.target as HTMLFormElement;
+    const formData = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      organization: (form.elements.namedItem("organization") as HTMLInputElement).value,
+      interest: (form.elements.namedItem("interest") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      language: "ko",
+    };
+
+    try {
+      await fetch(APPS_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      setSubmitted(true);
+    } catch {
+      setError("전송 중 오류가 발생했습니다. 다시 시도해 주세요.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -127,11 +156,16 @@ export default function KoContactPage() {
                     />
                   </div>
 
+                  {error && (
+                    <p className="text-red-500 text-sm">{error}</p>
+                  )}
+
                   <button
                     type="submit"
-                    className="w-full px-8 py-3.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-cyan-600 transition-all shadow-lg shadow-blue-500/20"
+                    disabled={loading}
+                    className="w-full px-8 py-3.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-cyan-600 transition-all shadow-lg shadow-blue-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    메시지 보내기
+                    {loading ? "전송 중..." : "메시지 보내기"}
                   </button>
                 </form>
               )}
