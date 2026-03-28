@@ -1,0 +1,35 @@
+# Dependabot 자동 의존성 업데이트 설정
+# 문서: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
+
+version: 2
+updates:
+  # npm 패키지 (Next.js, React 등) 업데이트 체크
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"        # UTC 06:00 = KST 15:00 (월요일 오후 3시)
+      timezone: "Asia/Seoul"
+    # PR 동시 생성 최대 수 (너무 많으면 관리 부담)
+    open-pull-requests-limit: 10
+    # 커밋 메시지 형식
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    # 보안 업데이트는 별도 라벨
+    labels:
+      - "dependencies"
+    # 마이너/패치만 자동 PR, 메이저는 보안 이슈일 때만
+    versioning-strategy: "increase"
+
+  # GitHub Actions 워크플로우 업데이트 체크 (향후 CI/CD 추가 시)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Asia/Seoul"
+    labels:
+      - "ci"
