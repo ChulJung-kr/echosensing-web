@@ -40,7 +40,7 @@ const partners = [
     name: "Hanwha Systems",
     flag: "🇰🇷",
     country: "Korea",
-    description: "On-Board SAR signal processor ~$324K + ground S/W ~$414K contracted.",
+    description: "On-Board SAR signal processor (₩454M) + ground S/W (₩580M) — ₩1.034B total contracted.",
   },
   {
     name: "eGIS Korea",

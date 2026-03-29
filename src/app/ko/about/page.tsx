@@ -40,7 +40,7 @@ const partners = [
     name: "Hanwha Systems",
     flag: "\u{1F1F0}\u{1F1F7}",
     country: "한국",
-    description: "온보드 SAR 신호 처리기 약 4.2억원 + 지상 S/W 약 5.4억원 계약 체결.",
+    description: "온보드 SAR 신호 처리기 4.54억원 + 지상 S/W 5.80억원, 총 10.34억원 계약 체결.",
   },
   {
     name: "eGIS Korea",
