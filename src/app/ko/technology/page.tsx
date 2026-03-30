@@ -294,16 +294,17 @@ export default function KoTechnologyPage() {
               </span>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">모듈형 위성 버스</h2>
               <p className="text-gray-500 leading-relaxed mb-6">
-                모듈형 위성 플랫폼은 표준화된 부품을 사용하여 신속한 조립과
-                비용 효율적인 위성군 배치를 가능하게 합니다. 각 버스에는 Edge AI
-                프로세서가 통합되어 있으며, 다양한 SAR 탑재체 구성과 호환되도록 설계되었습니다.
+                에코센싱은 Momentus(미국)와 파트너십을 통해 실적이 검증된 모듈형 위성
+                버스 플랫폼을 활용합니다. M500 버스 호환 공동 모델링 합의를 기반으로,
+                에코센싱의 Edge AI 프로세서와 SAR 탑재체를 Momentus 하드웨어에 직접
+                통합하여 — 자체 버스 개발 없이 안정적인 위성 플랫폼을 확보했습니다.
               </p>
               <ul className="space-y-2">
                 {[
-                  "표준화된 모듈형 아키텍처",
-                  "다양한 탑재체 유형과 호환",
-                  "Edge AI 처리 통합",
-                  "위성군 규모 양산을 위한 설계",
+                  "Momentus 실적 검증 버스 플랫폼 기반",
+                  "M500 버스 호환 공동 모델링 합의 완료",
+                  "에코센싱 Edge AI 프로세서 온보드 통합",
+                  "위성군 규모 배치 준비 완료",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-gray-600 text-sm">
                     <svg className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

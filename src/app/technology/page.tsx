@@ -290,17 +290,18 @@ export default function TechnologyPage() {
               </span>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Modular Satellite Bus</h2>
               <p className="text-gray-500 leading-relaxed mb-6">
-                Our modular satellite platform uses standardized components, enabling rapid
-                assembly and cost-effective constellation deployment. Each bus integrates
-                our Edge AI processor and is designed for compatibility with multiple
-                SAR payload configurations.
+                EchoSensing partners with Momentus (USA) to leverage their flight-proven
+                modular satellite bus platform. Through the M500 bus compatibility
+                co-modeling agreement, EchoSensing integrates its Edge AI processor and
+                SAR payloads directly onto Momentus hardware — securing a reliable satellite
+                bus for its constellation without building one from scratch.
               </p>
               <ul className="space-y-2">
                 {[
-                  "Standardized modular architecture",
-                  "Compatible with multiple payload types",
-                  "Integrated Edge AI processing",
-                  "Designed for constellation-scale production",
+                  "Based on Momentus flight-proven bus platform",
+                  "M500 bus compatibility co-modeling agreed",
+                  "EchoSensing Edge AI processor integrated onboard",
+                  "Ready for constellation-scale deployment",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-gray-600 text-sm">
                     <svg className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
