@@ -11,12 +11,14 @@ export default function Footer() {
   const navLinks = isKo
     ? [
         { href: "/ko/about", label: "소개" },
+        { href: "/ko/news", label: "뉴스" },
         { href: "/ko/technology", label: "기술" },
         { href: "/ko/team", label: "팀" },
         { href: "/ko/contact", label: "문의" },
       ]
     : [
         { href: "/about", label: "About" },
+        { href: "/news", label: "News" },
         { href: "/technology", label: "Technology" },
         { href: "/team", label: "Team" },
         { href: "/contact", label: "Contact" },

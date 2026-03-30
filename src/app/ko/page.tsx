@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
 import FadeIn from "@/components/FadeIn";
+import { newsArticles } from "@/data/news";
 
 const capabilities = [
   {
@@ -270,6 +271,57 @@ export default function KoHomePage() {
                 </div>
               </FadeIn>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest News */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <SectionHeading
+            tag="최신 뉴스"
+            title="뉴스 & 업데이트"
+            description="에코센싱의 글로벌 활동과 주요 소식을 전해드립니다."
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            {newsArticles.slice(0, 3).map((article, i) => (
+              <FadeIn key={article.slug} delay={i * 0.1}>
+                <Link href={`/ko/news/${article.slug}`}>
+                  <div className="group cursor-pointer">
+                    <div className="rounded-xl overflow-hidden border border-gray-200 bg-gray-50 shadow-sm group-hover:shadow-lg transition-shadow h-200">
+                      <Image
+                        src={article.images[0]}
+                        alt={article.title.ko}
+                        width={400}
+                        height={200}
+                        className="w-full h-200 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="mt-4">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
+                          article.category === "Conference" ? "text-blue-600 bg-blue-50" :
+                          article.category === "Exhibition" ? "text-purple-600 bg-purple-50" :
+                          "text-emerald-600 bg-emerald-50"
+                        }`}>
+                          {article.categoryKo}
+                        </span>
+                      </div>
+                      <p className="text-xs text-gray-400 mb-2">{article.dateLabel.ko}</p>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">{article.title.ko}</h3>
+                      <p className="text-gray-500 text-sm line-clamp-2">{article.summary.ko}</p>
+                    </div>
+                  </div>
+                </Link>
+              </FadeIn>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/ko/news" className="inline-block px-8 py-3.5 bg-gray-100 text-gray-900 font-semibold rounded-lg hover:bg-gray-200 transition-colors">
+              모든 뉴스 보기 →
+            </Link>
           </div>
         </div>
       </section>
