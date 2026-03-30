@@ -35,12 +35,14 @@ export const newsArticles: NewsArticle[] = [
       en: [
         "EchoSensing participated in SmallSat Symposium 2026, the world's premier small satellite business event held annually in Silicon Valley. Over four days, EchoSensing CEO Dr. Chul-Ho Jung held nine strategic business meetings with satellite companies, ground system developers, investors, and NewSpace enterprises from the United States, United Kingdom, Denmark, Germany, and France.",
         "EchoSensing engaged with three satellite bus manufacturers: Momentus (USA) discussed the Vigoride platform and orbital transfer capabilities; SSTL (UK) shared their multi-band SAR experience across X, S, and C-band; Space Inventor (Denmark) presented their vertically integrated manufacturing approach.",
+        "At the symposium, CEO Dr. Chul-Ho Jung also met with John Lee, a senior leader who has shaped much of Korea's space program over the years. They discussed the trajectory of Korea's space sector — noting increased government commitment, growing private-sector participation, and expanding global partnerships. It was a timely exchange that reinforced the environment EchoSensing is building for: running AI onboard SAR satellites to deliver Earth observation data faster, right from orbit.",
         "Patrick Beatty of Beyond Earth Ventures reviewed EchoSensing's IR materials and offered guidance on business model positioning, investor communications, and US market entry strategy.",
         "The connection made at SmallSat Symposium led to a significant follow-up when Momentus CEO John Rood visited Seoul on March 6, 2026. The meeting covered InSAR technology differentiation, onboard AI processing that reduces data delivery from ~12 hours to ~20 minutes, and Korean-manufactured component integration possibilities.",
       ],
       ko: [
         "에코센싱은 매년 실리콘밸리에서 개최되는 세계 최대 소형위성 비즈니스 행사인 SmallSat Symposium 2026에 참가했습니다. 정철호 대표는 4일간 미국, 영국, 덴마크, 독일, 프랑스 등 5개국의 위성 기업, 지상 시스템 개발사, 투자사, 뉴스페이스 기업과 총 9건의 전략적 비즈니스 미팅을 진행했습니다.",
         "SAR 위성 임무를 위해 세 곳의 위성 버스 제조사와 개별 협의를 진행했습니다. Momentus(미국)와 Vigoride 플랫폼 및 궤도 이동 서비스를, SSTL(영국)과 다중 밴드 SAR 경험을, Space Inventor(덴마크)와 수직통합 제조 방식을 논의했습니다.",
+        "심포지엄에서 정철호 대표는 한국 우주 프로그램의 발전에 핵심적인 역할을 해온 John Lee와도 만남을 가졌습니다. 한국 우주 산업의 방향에 대해 의견을 나누었으며, 정부의 투자 확대, 민간 참여 증가, 글로벌 파트너십 확장이라는 공통된 전망을 확인했습니다. 이는 에코센싱이 지향하는 사업 환경 — SAR 위성에 AI를 탑재하여 궤도에서 직접 지구관측 데이터를 신속하게 제공하는 것 — 과 정확히 맞닿아 있는 대화였습니다.",
         "Beyond Earth Ventures의 Patrick Beatty가 에코센싱의 IR 자료를 검토하고, 비즈니스 모델 포지셔닝, 투자자 커뮤니케이션, 미국 시장 진입 전략에 대한 가이드를 제공했습니다.",
         "SmallSat Symposium에서의 만남을 계기로 Momentus CEO John Rood가 3월 6일 서울을 방문하여 후속 미팅을 진행했습니다. InSAR 기술 차별성, 온보드 AI 프로세싱(기존 12시간 → 약 20분), 한국 기반 부품 생산 가능성을 논의했습니다.",
       ],
