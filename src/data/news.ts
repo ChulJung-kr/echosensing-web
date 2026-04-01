@@ -16,6 +16,41 @@ export interface NewsArticle {
 
 export const newsArticles: NewsArticle[] = [
   {
+    slug: "momentus-seoul-partnership-2026",
+    date: "2026-03",
+    dateLabel: { en: "March 2026", ko: "2026년 3월" },
+    category: "Conference",
+    categoryKo: "파트너십",
+    title: {
+      en: "EchoSensing and Momentus Deepen SAR Satellite Collaboration at Seoul Meeting",
+      ko: "에코센싱-Momentus, 서울 미팅에서 SAR 위성 협력 구체화",
+    },
+    summary: {
+      en: "Momentus CEO John Rood visited Seoul for a strategic face-to-face meeting. NDA executed, collaboration roadmap agreed, and joint satellite-sensor modeling initiated.",
+      ko: "Momentus CEO John Rood 서울 방문. NDA 체결, 단계적 협력 로드맵 합의, 위성-센서 공동 모델링 착수.",
+    },
+    location: { en: "Seoul, South Korea", ko: "대한민국 서울" },
+    images: ["/images/news/momentus-seoul-2026-01.webp"],
+    content: {
+      en: [
+        "EchoSensing CEO Dr. Chul-Ho Jung and Momentus Space CEO John Rood held a strategic face-to-face meeting in Seoul in March 2026. The meeting built on a relationship initiated at SmallSat Symposium 2026 in Silicon Valley, where EchoSensing first engaged with Momentus in February.",
+        "The meeting confirmed strong technical synergy between the two companies. EchoSensing brings SAR payload and onboard AI processing expertise — including flight-proven airborne SAR systems and an AI processor capable of reducing data delivery time from approximately 12 hours to 20 minutes. Momentus brings satellite bus manufacturing capability backed by two years of flight heritage across three missions, with a fourth mission launched from Vandenberg carrying payloads for U.S. Department of Defense and NASA.",
+        "Rood described Momentus's design philosophy as focused on reliability and manufacturability rather than high-cost, space-only components. This approach aligns directly with EchoSensing's strategy of adapting proven industrial-grade AI hardware for space applications.",
+        "The two companies agreed on a structured collaboration roadmap: NDA execution enabling protected technical exchange, initial payload design sharing, joint satellite-sensor modeling and optimization by Momentus, component-level space qualification on upcoming Momentus missions, and an integrated satellite system targeting first launch in the 2029–2030 timeframe.",
+        "Drawing on his experience as former Head of International Business at Lockheed Martin, Rood expressed strong openness to performing work in Korea, citing the KAI FA-50 program as a model for effective local partnerships.",
+        "The discussion also covered Momentus's planned optical communications data relay satellite, which could support EchoSensing's constellation by reducing data latency, along with high-power orbital capabilities and elliptical orbit options extending dwell time over areas of interest.",
+      ],
+      ko: [
+        "에코센싱 정철호 대표와 Momentus Space의 John Rood CEO가 2026년 3월 서울에서 전략적 대면 미팅을 진행했습니다. 이번 미팅은 2월 실리콘밸리 SmallSat Symposium에서의 첫 만남을 기반으로 성사되었습니다.",
+        "미팅을 통해 양사의 기술적 시너지가 구체적으로 확인되었습니다. 에코센싱은 SAR 탑재체와 온보드 AI 프로세싱 전문성(데이터 전달 시간 약 12시간 → 20분 단축)을, Momentus는 3기 미션 2년간의 비행 실적을 기반으로 한 위성 버스 제조 역량을 보유하고 있으며, 4번째 미션은 미 국방부 및 NASA 페이로드를 탑재하여 Vandenberg에서 발사되었습니다.",
+        "Rood CEO는 Momentus의 설계 철학이 고비용 우주 전용 부품 대신 성숙한 산업용 부품을 우주에서 생존할 수 있도록 패키징하는 방식임을 설명했습니다. 이는 검증된 산업용 AI 하드웨어를 우주에 적용하는 에코센싱의 전략과 동일한 맥락입니다.",
+        "양사는 단계적 협력 로드맵에 합의했습니다. NDA 체결을 통한 기술 정보 보호 교환, 페이로드 초기 설계 공유, Momentus의 위성-센서 통합 모델링 및 설계 최적화, 기존 미션을 활용한 핵심 부품 궤도 검증, 그리고 2029~2030년 첫 위성 발사를 목표로 한 통합 시스템 구축입니다.",
+        "Rood CEO는 Lockheed Martin 국제사업 총괄 경험을 바탕으로, 한국 내 작업 수행에 개방적 입장을 밝혔습니다. KAI FA-50 프로그램을 효과적인 현지 파트너십의 모범 사례로 언급했습니다.",
+        "미팅에서는 Momentus의 광통신 데이터 중계 위성 계획도 논의되었으며, 에코센싱 군집위성의 데이터 지연 단축과 고전력 궤도 운용, 관심 지역 체류 시간 확대를 위한 타원 궤도 옵션이 함께 검토되었습니다.",
+      ],
+    },
+  },
+  {
     slug: "smallsat-symposium-2026",
     date: "2026-02",
     dateLabel: { en: "February 2026", ko: "2026년 2월" },
@@ -37,14 +72,14 @@ export const newsArticles: NewsArticle[] = [
         "EchoSensing engaged with three satellite bus manufacturers: Momentus (USA) discussed the Vigoride platform and orbital transfer capabilities; SSTL (UK) shared their multi-band SAR experience across X, S, and C-band; Space Inventor (Denmark) presented their vertically integrated manufacturing approach.",
         "At the symposium, CEO Dr. Chul-Ho Jung also met with Dr. John Lee — a former NASA senior executive who was recruited as the inaugural Director of Space & Aviation Missions at Korea's newly established space agency KASA, where he led the R&D foundation for the country's space program. They discussed the trajectory of Korea's space sector — noting increased government commitment, growing private-sector participation, and expanding global partnerships. It was a timely exchange that reinforced the environment EchoSensing is building for: running AI onboard SAR satellites to deliver Earth observation data faster, right from orbit.",
         "Patrick Beatty of Beyond Earth Ventures reviewed EchoSensing's IR materials and offered guidance on business model positioning, investor communications, and US market entry strategy.",
-        "The connection made at SmallSat Symposium led to a significant follow-up when Momentus CEO John Rood visited Seoul on March 6, 2026. The meeting covered InSAR technology differentiation, onboard AI processing that reduces data delivery from ~12 hours to ~20 minutes, and Korean-manufactured component integration possibilities.",
+        "The connections made at SmallSat Symposium led directly to a significant follow-up: Momentus CEO John Rood visited Seoul in March 2026 for a strategic partnership meeting, where the two companies agreed on a concrete collaboration roadmap including NDA execution and joint satellite-sensor modeling.",
       ],
       ko: [
         "에코센싱은 매년 실리콘밸리에서 개최되는 세계 최대 소형위성 비즈니스 행사인 SmallSat Symposium 2026에 참가했습니다. 정철호 대표는 4일간 미국, 영국, 덴마크, 독일, 프랑스 등 5개국의 위성 기업, 지상 시스템 개발사, 투자사, 뉴스페이스 기업과 총 9건의 전략적 비즈니스 미팅을 진행했습니다.",
         "SAR 위성 임무를 위해 세 곳의 위성 버스 제조사와 개별 협의를 진행했습니다. Momentus(미국)와 Vigoride 플랫폼 및 궤도 이동 서비스를, SSTL(영국)과 다중 밴드 SAR 경험을, Space Inventor(덴마크)와 수직통합 제조 방식을 논의했습니다.",
         "심포지엄에서 정철호 대표는 NASA 고위직 출신으로 대한민국 우주항공청(KASA) 초대 우주항공임무본부장을 역임하며 한국 우주산업의 R&D 기반을 구축한 존리(John Lee) 박사와 만남을 가졌습니다. 한국 우주 산업의 방향에 대해 의견을 나누었으며, 정부의 투자 확대, 민간 참여 증가, 글로벌 파트너십 확장이라는 공통된 전망을 확인했습니다. 이는 에코센싱이 지향하는 사업 환경 — SAR 위성에 AI를 탑재하여 궤도에서 직접 지구관측 데이터를 신속하게 제공하는 것 — 과 정확히 맞닿아 있는 대화였습니다.",
         "Beyond Earth Ventures의 Patrick Beatty가 에코센싱의 IR 자료를 검토하고, 비즈니스 모델 포지셔닝, 투자자 커뮤니케이션, 미국 시장 진입 전략에 대한 가이드를 제공했습니다.",
-        "SmallSat Symposium에서의 만남을 계기로 Momentus CEO John Rood가 3월 6일 서울을 방문하여 후속 미팅을 진행했습니다. InSAR 기술 차별성, 온보드 AI 프로세싱(기존 12시간 → 약 20분), 한국 기반 부품 생산 가능성을 논의했습니다.",
+        "SmallSat Symposium에서의 인연은 곧바로 구체적 성과로 이어졌습니다. 2026년 3월 Momentus CEO John Rood가 서울을 방문하여 전략적 파트너십 미팅을 진행했으며, NDA 체결과 위성-센서 공동 모델링을 포함한 협력 로드맵에 합의했습니다.",
       ],
     },
   },
