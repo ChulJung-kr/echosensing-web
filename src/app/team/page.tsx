@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const leadership = [
   {
-    name: "Chul-ho Jung",
+    name: "Chul H. Jung",
     role: "CEO & Founder",
     education: "Ph.D. Aerospace Electronics, Korea Aerospace University",
     background: [
