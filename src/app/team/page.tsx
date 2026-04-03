@@ -19,7 +19,7 @@ const leadership = [
   },
   {
     name: "Jung-hwan Song",
-    role: "CTO",
+    role: "CTO & Co-Founder",
     education: "Ph.D. (completed) Aerospace Electronics",
     background: [
       "Former Korea Ocean Research Institute",

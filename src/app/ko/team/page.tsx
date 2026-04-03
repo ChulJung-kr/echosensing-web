@@ -19,7 +19,7 @@ const leadership = [
   },
   {
     name: "송정환",
-    role: "CTO",
+    role: "CTO & 공동창업자",
     education: "항공전자공학 박사 수료",
     background: [
       "전 한국해양과학기술원 연구원",
