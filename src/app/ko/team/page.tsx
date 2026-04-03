@@ -99,7 +99,7 @@ export default function KoTeamPage() {
               박사급 도메인 전문가
             </h1>
             <p className="text-xl text-gray-500 leading-relaxed">
-              KARI, ETRI, KAIST 등 한국 최고의 위성 프로그램 출신 전문가들로 구성되어,
+              KARI, KIOST, ETRI 등 한국 최고의 위성 프로그램 출신 전문가들로 구성되어,
               SAR 신호 처리부터 온보드 AI까지 위성 시스템 전 영역을 아우릅니다.
             </p>
           </motion.div>

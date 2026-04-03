@@ -22,7 +22,7 @@ const leadership = [
     role: "CTO & Co-Founder",
     education: "Ph.D. (completed) Aerospace Electronics",
     background: [
-      "Former Korea Ocean Research Institute",
+      "Former KIOST (Korea Institute of Ocean Science & Technology)",
       "GOCI satellite payload calibration lead",
       "CAS300-2 ground processor development",
       "Full-cycle payload to ground systems experience",
@@ -99,7 +99,7 @@ export default function TeamPage() {
               Ph.D.-Level Domain Experts
             </h1>
             <p className="text-xl text-gray-500 leading-relaxed">
-              Our team brings deep expertise from Korea&apos;s top satellite programs — KARI, ETRI, KAIST —
+              Our team brings deep expertise from Korea&apos;s top satellite programs — KARI, KIOST, ETRI —
               covering the full satellite system spectrum from SAR signal processing to onboard AI.
             </p>
           </motion.div>
