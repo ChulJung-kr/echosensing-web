@@ -16,6 +16,39 @@ export interface NewsArticle {
 
 export const newsArticles: NewsArticle[] = [
   {
+    slug: "space-pioneer-mimo-sar-2026",
+    date: "2026-04",
+    dateLabel: { en: "April 2026", ko: "2026년 4월" },
+    category: "Contract",
+    categoryKo: "계약",
+    title: {
+      en: "EchoSensing Selected for Korea's Space Pioneer Program — MIMO SAR Digital Beamforming Technology Development",
+      ko: "에코센싱, 국가 스페이스파이오니어 사업 참여기업 선정 — MIMO SAR 디지털 빔포밍 기술 개발",
+    },
+    summary: {
+      en: "Selected as a participating company in the national Space Pioneer Program for MIMO-based high-resolution wide-area SAR payload digital beamforming technology development. Responsible for SAR signal processing algorithm development.",
+      ko: "스페이스파이오니어 사업의 MIMO 기반 고해상도 광역 SAR 탑재체용 디지털 빔포밍 기술 개발 과제에 참여기업으로 선정. SAR 신호처리 알고리즘 개발 담당.",
+    },
+    location: { en: "Korea", ko: "한국" },
+    images: ["/images/news/space-pioneer-2026-01.webp"],
+    content: {
+      en: [
+        "EchoSensing has been selected as a participating company in the national Space Pioneer Program (스페이스파이오니어사업), joining a consortium tasked with developing MIMO-based high-resolution wide-area SAR payload digital beamforming technology.",
+        "The Space Pioneer Program is a 10-year national R&D initiative (2021–2030) led by the Korea AeroSpace Administration (KASA), aimed at developing 16 key space technologies across launch vehicles, satellite platforms, and satellite payloads. The program brings together industry, academia, and government research institutes in consortium-based partnerships, with the goal of achieving self-sufficiency in critical space technologies.",
+        "Within this project, EchoSensing is responsible for SAR signal processing algorithm development — a role that directly leverages the company's core expertise. EchoSensing's team has accumulated deep experience in SAR signal processing through participation in Korea's national satellite programs, including KOMPSAT-5, CAS300-2, and CAS500-5.",
+        "MIMO (Multiple-Input Multiple-Output) SAR represents a next-generation approach to satellite radar imaging, enabling both high resolution and wide-area coverage simultaneously — capabilities that are traditionally in a trade-off relationship. Digital beamforming is the key enabler of this technology, allowing flexible and efficient use of radar signals to achieve performance levels not possible with conventional SAR architectures.",
+        "This selection reinforces EchoSensing's position in Korea's satellite SAR ecosystem and adds a government-backed R&D program to the company's growing portfolio of national and commercial projects.",
+      ],
+      ko: [
+        "에코센싱이 우주항공청(KASA) 주관 스페이스파이오니어 사업의 '다중입력 다중출력(MIMO) 고해상도 광역 SAR 탑재체용 디지털 빔포밍 기술' 개발 과제에 참여기업으로 선정되었습니다.",
+        "스페이스파이오니어 사업은 2021년부터 2030년까지 10년간 발사체, 위성본체, 위성탑재체 3개 분야의 16개 국가우주중점기술을 개발하는 국가 R&D 프로그램입니다. 산·학·연 컨소시엄을 구성하여 산업체 중심으로 핵심 우주기술의 국산화와 자립을 추진하고 있습니다.",
+        "에코센싱은 이번 과제에서 SAR 신호처리 알고리즘 개발을 담당합니다. 이는 에코센싱의 핵심 역량과 직결되는 역할입니다. 에코센싱 팀은 다목적실용위성5호(KOMPSAT-5), 차세대소형위성2호(CAS300-2), 차세대중형위성5호(CAS500-5) 등 국가 위성 프로그램에 참여하며 SAR 신호처리 분야에서 깊은 경험을 축적해 왔습니다.",
+        "MIMO SAR는 차세대 위성 레이더 영상 기술로, 기존 SAR 시스템에서 상충 관계에 있던 고해상도와 광역 관측을 동시에 구현할 수 있는 접근 방식입니다. 디지털 빔포밍은 이를 가능하게 하는 핵심 기술로, 레이더 신호를 유연하고 효율적으로 활용하여 기존 SAR 구조에서는 달성하기 어려운 성능을 실현합니다.",
+        "이번 선정은 국내 위성 SAR 생태계에서 에코센싱의 위상을 재확인하는 것이며, 국가 R&D와 상용 프로젝트를 아우르는 에코센싱의 사업 포트폴리오를 한층 강화합니다.",
+      ],
+    },
+  },
+  {
     slug: "momentus-seoul-partnership-2026",
     date: "2026-03",
     dateLabel: { en: "March 2026", ko: "2026년 3월" },
