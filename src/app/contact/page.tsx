@@ -10,6 +10,7 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [formLoadTime] = useState(() => Date.now());
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -17,13 +18,30 @@ export default function ContactPage() {
     setError("");
 
     const form = e.target as HTMLFormElement;
+    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+    const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+
+    if (name.trim().length < 2) {
+      setError("Please enter your full name.");
+      setLoading(false);
+      return;
+    }
+    if (message.trim().length < 10) {
+      setError("Please write a more detailed message (at least 10 characters).");
+      setLoading(false);
+      return;
+    }
+
     const formData = {
-      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      name,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       organization: (form.elements.namedItem("organization") as HTMLInputElement).value,
       interest: (form.elements.namedItem("interest") as HTMLSelectElement).value,
-      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      message,
       language: "en",
+      website: (form.elements.namedItem("website") as HTMLInputElement).value,
+      formLoadTime,
+      submitTime: Date.now(),
     };
 
     try {
@@ -88,6 +106,16 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Honeypot — hidden from users, bots fill this */}
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    className="absolute -left-[9999px] opacity-0 h-0 w-0 pointer-events-none"
+                  />
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                       Name
