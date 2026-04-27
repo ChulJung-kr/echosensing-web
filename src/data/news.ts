@@ -66,7 +66,7 @@ export const newsArticles: NewsArticle[] = [
     images: ["/images/news/momentus-seoul-2026-01.webp"],
     content: {
       en: [
-        "EchoSensing CEO Dr. Chul-Ho Jung and Momentus Space CEO John Rood held a strategic face-to-face meeting in Seoul in March 2026. The meeting built on a relationship initiated at SmallSat Symposium 2026 in Silicon Valley, where EchoSensing first engaged with Momentus in February.",
+        "EchoSensing CEO Dr. Chul H. Jung and Momentus Space CEO John Rood held a strategic face-to-face meeting in Seoul in March 2026. The meeting built on a relationship initiated at SmallSat Symposium 2026 in Silicon Valley, where EchoSensing first engaged with Momentus in February.",
         "The meeting confirmed strong technical synergy between the two companies. EchoSensing brings SAR payload and onboard AI processing expertise — including flight-proven airborne SAR systems and an AI processor capable of reducing data delivery time from approximately 12 hours to 20 minutes. Momentus brings satellite bus manufacturing capability backed by two years of flight heritage across three missions, with a fourth mission launched from Vandenberg carrying payloads for U.S. Department of Defense and NASA.",
         "Rood described Momentus's design philosophy as focused on reliability and manufacturability rather than high-cost, space-only components. This approach aligns directly with EchoSensing's strategy of adapting proven industrial-grade AI hardware for space applications.",
         "The two companies agreed on a structured collaboration roadmap: a formal framework enabling technical exchange, initial payload design sharing, joint satellite-sensor modeling and optimization by Momentus, component-level space qualification on upcoming Momentus missions, and an integrated satellite system targeting first launch in the 2029–2030 timeframe.",
@@ -101,9 +101,9 @@ export const newsArticles: NewsArticle[] = [
     images: ["/images/news/smallsat-symposium-2026-01.webp", "/images/news/smallsat-symposium-2026-02.webp"],
     content: {
       en: [
-        "EchoSensing participated in SmallSat Symposium 2026, the world's premier small satellite business event held annually in Silicon Valley. Over four days, EchoSensing CEO Dr. Chul-Ho Jung held nine strategic business meetings with satellite companies, ground system developers, investors, and NewSpace enterprises from the United States, United Kingdom, Denmark, Germany, and France.",
+        "EchoSensing participated in SmallSat Symposium 2026, the world's premier small satellite business event held annually in Silicon Valley. Over four days, EchoSensing CEO Dr. Chul H. Jung held nine strategic business meetings with satellite companies, ground system developers, investors, and NewSpace enterprises from the United States, United Kingdom, Denmark, Germany, and France.",
         "EchoSensing engaged with three satellite bus manufacturers: Momentus (USA) discussed the Vigoride platform and orbital transfer capabilities; SSTL (UK) shared their multi-band SAR experience across X, S, and C-band; Space Inventor (Denmark) presented their vertically integrated manufacturing approach.",
-        "At the symposium, CEO Dr. Chul-Ho Jung also met with Dr. John Lee — a former NASA senior executive who was recruited as the inaugural Director of Space & Aviation Missions at Korea's newly established space agency KASA, where he led the R&D foundation for the country's space program. They discussed the trajectory of Korea's space sector — noting increased government commitment, growing private-sector participation, and expanding global partnerships. It was a timely exchange that reinforced the environment EchoSensing is building for: running AI onboard SAR satellites to deliver Earth observation data faster, right from orbit.",
+        "At the symposium, CEO Dr. Chul H. Jung also met with Dr. John Lee — a former NASA senior executive who was recruited as the inaugural Director of Space & Aviation Missions at Korea's newly established space agency KASA, where he led the R&D foundation for the country's space program. They discussed the trajectory of Korea's space sector — noting increased government commitment, growing private-sector participation, and expanding global partnerships. It was a timely exchange that reinforced the environment EchoSensing is building for: running AI onboard SAR satellites to deliver Earth observation data faster, right from orbit.",
         "Patrick Beatty of Beyond Earth Ventures reviewed EchoSensing's IR materials and offered guidance on business model positioning, investor communications, and US market entry strategy.",
         "The connections made at SmallSat Symposium led directly to a significant follow-up: Momentus CEO John Rood visited Seoul in March 2026 for a strategic partnership meeting, where the two companies agreed on a concrete collaboration roadmap including joint satellite-sensor modeling.",
       ],
@@ -135,7 +135,7 @@ export const newsArticles: NewsArticle[] = [
     content: {
       en: [
         "EchoSensing participated in Space Summit 2026, one of the Asia-Pacific region's premier space industry business events, held in Singapore on February 2–3, 2026.",
-        "Over two days, EchoSensing CEO Dr. Chul-Ho Jung conducted nine focused business meetings with satellite manufacturers, data analytics companies, investors, and consulting firms from five countries — including the United States, France, India, Australia, and Singapore.",
+        "Over two days, EchoSensing CEO Dr. Chul H. Jung conducted nine focused business meetings with satellite manufacturers, data analytics companies, investors, and consulting firms from five countries — including the United States, France, India, Australia, and Singapore.",
         "EchoSensing engaged with HEX20, an Indian microsatellite manufacturer, to discuss SAR payload integration. Discussions also advanced with a French multi-sensor data company on SAR-AIS fusion for maritime surveillance.",
         "A meeting with AWS's space industry team explored cloud-based HPC support for accelerating onboard AI processing development. Meetings with space cybersecurity specialists from the US opened pathways for joint proposals on government RFIs.",
       ],
@@ -167,7 +167,7 @@ export const newsArticles: NewsArticle[] = [
       en: [
         "EchoSensing participated in Nihonbashi Space Week 2025, Japan's flagship space industry exhibition held in the Nihonbashi district of Tokyo — the hub of Japan's growing space startup ecosystem.",
         "The event brought together satellite companies, SAR specialists, remote sensing firms, and space technology providers. Companies including Synspective and PASCO showcased their latest capabilities.",
-        "EchoSensing CEO Dr. Chul-Ho Jung met with Dennis Elgaard, Sales Director at Unibap (Sweden) — a key partner for onboard AI hardware — and Sam Claydon of Japan Space Systems. The event also provided an opportunity to connect with Dr. Budhaditya Pyne of Synspective.",
+        "EchoSensing CEO Dr. Chul H. Jung met with Dennis Elgaard, Sales Director at Unibap (Sweden) — a key partner for onboard AI hardware — and Sam Claydon of Japan Space Systems. The event also provided an opportunity to connect with Dr. Budhaditya Pyne of Synspective.",
         "With APSAR 2027 coming to Korea, EchoSensing looks forward to continued collaboration with partners across the Japanese space ecosystem.",
       ],
       ko: [
@@ -197,7 +197,7 @@ export const newsArticles: NewsArticle[] = [
     content: {
       en: [
         "EchoSensing participated in the 9th Asia-Pacific Conference on Synthetic Aperture Radar (APSAR 2025), held in Matsue, Shimane, Japan. APSAR is the region's foremost academic and industry conference dedicated to SAR technology.",
-        "A highlight was the announcement that APSAR 2027 will be held in Korea. EchoSensing CEO Dr. Chul-Ho Jung, serving as Co-Chair of APSAR 2027, presented Korea's hosting vision under the theme \"Establishing a Sustainable SAR Cooperation Framework in the Asia-Pacific.\"",
+        "A highlight was the announcement that APSAR 2027 will be held in Korea. EchoSensing CEO Dr. Chul H. Jung, serving as Co-Chair of APSAR 2027, presented Korea's hosting vision under the theme \"Establishing a Sustainable SAR Cooperation Framework in the Asia-Pacific.\"",
         "Dr. Jung met with Dr. Adriano Meta, CEO of MetaSensing, and engaged with researchers from Synspective (Japan), DLR (Germany), Seoul National University, and Yonsei University.",
         "These connections reinforce EchoSensing's growing network across the SAR research and industry landscape.",
       ],
@@ -228,7 +228,7 @@ export const newsArticles: NewsArticle[] = [
     content: {
       en: [
         "EchoSensing participated in World Space Business Week (WSBW) 2025, the premier annual business event for the global space industry organized by Novaspace.",
-        "CEO Dr. Chul-Ho Jung attended 16 sessions spanning Earth observation, SAR technology, small satellite manufacturing, venture capital, and space finance. The global EO data market stands at $3.3 billion, with defense and security accounting for 40–50%.",
+        "CEO Dr. Chul H. Jung attended 16 sessions spanning Earth observation, SAR technology, small satellite manufacturing, venture capital, and space finance. The global EO data market stands at $3.3 billion, with defense and security accounting for 40–50%.",
         "The \"From Payload to Mission Providers\" session was particularly relevant — the panel examined how traditional payload companies are evolving into end-to-end mission providers, aligned with EchoSensing's own strategy.",
         "Space venture capital showed signs of recovery, with Q2 2025 investment reaching $3.1 billion. WSBW 2025 confirmed that EchoSensing's SAR + onboard AI direction is well aligned with the global market.",
       ],
@@ -291,7 +291,7 @@ export const newsArticles: NewsArticle[] = [
       en: [
         "EchoSensing attended the 39th Annual Small Satellite Conference, one of the longest-running and most recognized gatherings in the global small satellite community, held at Utah State University in August 2025.",
         "The conference brought together satellite developers, researchers, government agencies, and industry leaders from around the world, featuring extensive networking programs across the value chain.",
-        "EchoSensing CEO Dr. Chul-Ho Jung participated as an exhibitor, engaging with companies and institutions across the small satellite ecosystem. SAR payloads with onboard AI processing drew interest from organizations exploring next-generation Earth observation capabilities.",
+        "EchoSensing CEO Dr. Chul H. Jung participated as an exhibitor, engaging with companies and institutions across the small satellite ecosystem. SAR payloads with onboard AI processing drew interest from organizations exploring next-generation Earth observation capabilities.",
         "The conference served as an important stepping stone for EchoSensing's global outreach, with connections leading to deeper engagements at subsequent industry events in early 2026.",
       ],
       ko: [

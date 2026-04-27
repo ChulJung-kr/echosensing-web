@@ -81,8 +81,8 @@ export default function Footer() {
                   info@echosensing.com
                 </a>
               </li>
-              <li>{isKo ? "경기도 용인시 수지구 포은대로59번길 40" : "40, Poeun-daero 59beon-gil, Suji-gu"}</li>
-              <li>{isKo ? "16864" : "Yongin-si, Gyeonggi-do 16864, Korea"}</li>
+              <li>{isKo ? "경기도 용인시 수지구 포은대로59번길 40, 16864" : "40, Poeun-daero 59beon-gil, Suji-gu, Yongin-si, Gyeonggi-do, 16864"}</li>
+              <li>{isKo ? "대한민국" : "Rep. of KOREA"}</li>
             </ul>
           </div>
         </div>
